@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alura challenge 01</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+
+  <header>
+    <img class="logo" src="assets/Logo.png" alt="Logo Alura">
+  </header>
+
+
+  <main class="container">
+
+
+    <section class="container__encriptador">
+
+
+      <div class="container__encriptador__input">
+        <textarea class="input" placeholder="Ingrese el texto aqui"></textarea>
+      </div>
+
+      <div class="container__aviso">
+        <div class="container__aviso__reglas">
+          <img src="assets/bi_exclamation-circle-fill.png" alt="signo exclamación">
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="container__buttons">
+            <button onclick= encriptarSubmit() class="container__buttons__btn ehover" type="submit">Encriptar</button>
+            <button onclick= desencriptarSubmit() class="container__buttons__btn container__buttons__btn--modified dhover" type="submit">Desencriptar</button>
+        </div>
+      </div>
+    
+
+
+    </section>
+
+
+    <aside class="container__aside">
+
+      <div class="container__aside__respuesta ocultar">
+        <div class="respuesta margin__t"></div>
+        <button class="container__buttons__btn container__buttons__btn--modified margin__b btn-copy chover">Copiar</button>
+      </div>
+
+      <div class="container__aside__mensaje">
+        <img class="img" src="assets/Muñeco.png" alt="niño mirando un diamante a través de una lupa">
+        <h3 class="container__mensaje__titulo">Ningún mensaje fue encontrado</h3>
+        <p>Ingresa el texto que deseas encriptar o Desencriptar</p>
+      </div>
+
+  
+    </aside>
+  
+  
+  </main>
+   
+  
+  <footer class="footer">Adrian Yebid Rincon 2024</footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
